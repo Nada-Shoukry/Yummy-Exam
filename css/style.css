@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --- Fonts --- */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ---- */
+
+.container {
+    margin-top: 50px;
+}
+
+.bg-main {
+    background-color: rgba(51, 49, 49, 0.299);
+}
+
+/* .search,
+.categories,
+.meal,
+.area,
+.ingredients,
+.contact {
+    display : none;
+} */
+
+
+/* ----- Search ----- */
+
+.search-inputs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #ced4da !important;
+}
+
+.search input:-moz-placeholder {
+    color: #ced4da !important;
+}
+
+/* --- Loading --- */
+
+.loading {
+    display: flex;
+    z-index: 99;
+}
+
+/* ----- Home ----- */
+
+.meal {
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.meal-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffc8;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+}
+
+/* --- Side Bar --- */
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: -289.362px;
+    z-index: 999;
+}
+
+.side-content ul li,
+.sidebar-icons i,
+.logo img,
+.logo-icons i,
+.bars-close,
+.col-md-3,
+i {
+    cursor: pointer;
+}
+
+.logo {
+    width: 60px;
+}
+
+.side-links {
+    margin-top : 100px;
+}
+
+
+
+
+
